@@ -36,7 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.txtCapital = new System.Windows.Forms.TextBox();
             this.txtInteres = new System.Windows.Forms.TextBox();
             this.txtPlazo = new System.Windows.Forms.TextBox();
-            this.txtEnganche = new System.Windows.Forms.TextBox();
             this.txtMensualidad = new System.Windows.Forms.TextBox();
             this.txtAmortizaciones = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -55,6 +53,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtTotalPrestamo = new System.Windows.Forms.TextBox();
+            this.rbAnual = new System.Windows.Forms.RadioButton();
+            this.rbMensual = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -101,11 +103,6 @@
             // 
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
             // 
             // label8
             // 
@@ -171,14 +168,6 @@
             this.txtPlazo.Name = "txtPlazo";
             this.txtPlazo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
-            // txtEnganche
-            // 
-            this.txtEnganche.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.txtEnganche, "txtEnganche");
-            this.txtEnganche.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEnganche.Name = "txtEnganche";
-            this.txtEnganche.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
-            // 
             // txtMensualidad
             // 
             this.txtMensualidad.BackColor = System.Drawing.Color.White;
@@ -237,6 +226,10 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.groupBox3.Controls.Add(this.rbMensual);
+            this.groupBox3.Controls.Add(this.rbAnual);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.txtTotalPrestamo);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.cbTipoCredito);
@@ -244,16 +237,40 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.txtMensualidad);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.txtEnganche);
             this.groupBox3.Controls.Add(this.txtCapital);
             this.groupBox3.Controls.Add(this.txtPlazo);
             this.groupBox3.Controls.Add(this.txtInteres);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // txtTotalPrestamo
+            // 
+            this.txtTotalPrestamo.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.txtTotalPrestamo, "txtTotalPrestamo");
+            this.txtTotalPrestamo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTotalPrestamo.Name = "txtTotalPrestamo";
+            // 
+            // rbAnual
+            // 
+            resources.ApplyResources(this.rbAnual, "rbAnual");
+            this.rbAnual.Name = "rbAnual";
+            this.rbAnual.TabStop = true;
+            this.rbAnual.UseVisualStyleBackColor = true;
+            // 
+            // rbMensual
+            // 
+            resources.ApplyResources(this.rbMensual, "rbMensual");
+            this.rbMensual.Name = "rbMensual";
+            this.rbMensual.TabStop = true;
+            this.rbMensual.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -285,7 +302,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -296,7 +312,6 @@
         private System.Windows.Forms.TextBox txtCapital;
         private System.Windows.Forms.TextBox txtInteres;
         private System.Windows.Forms.TextBox txtPlazo;
-        private System.Windows.Forms.TextBox txtEnganche;
         private System.Windows.Forms.TextBox txtMensualidad;
         private System.Windows.Forms.TextBox txtAmortizaciones;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -305,6 +320,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rbMensual;
+        private System.Windows.Forms.RadioButton rbAnual;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtTotalPrestamo;
     }
 }
 

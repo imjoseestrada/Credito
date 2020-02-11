@@ -150,7 +150,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <metadata name="cbTipoCredito.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -186,7 +186,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;cbTipoCredito.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -300,13 +300,13 @@
     <value>9, 78</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 17</value>
+    <value>130, 17</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Capital prestado</value>
+    <value>Monto del préstamo</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -318,11 +318,8 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
-  <metadata name="label6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -330,7 +327,7 @@
     <value>DM Sans, 9.749999pt</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 131</value>
+    <value>160, 78</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 17</value>
@@ -351,44 +348,8 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
-  <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>DM Sans, 9.749999pt</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 131</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 17</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Plazo</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -396,16 +357,16 @@
     <value>DM Sans, 9.749999pt</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 78</value>
+    <value>11, 131</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 17</value>
+    <value>40, 17</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Enganche</value>
+    <value>Plazo</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -417,11 +378,8 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
-  <metadata name="label9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -450,11 +408,8 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
-  <metadata name="label10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -483,7 +438,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <metadata name="txtNumeroCliente.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -591,16 +546,13 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;txtCapital.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
-  <metadata name="txtInteres.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="txtInteres.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
   <data name="txtInteres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 151</value>
+    <value>159, 98</value>
   </data>
   <data name="txtInteres.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
@@ -618,19 +570,16 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;txtInteres.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
-  <metadata name="txtPlazo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="txtPlazo.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
   <data name="txtPlazo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 151</value>
+    <value>159, 151</value>
   </data>
   <data name="txtPlazo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 24</value>
+    <value>89, 24</value>
   </data>
   <data name="txtPlazo.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -645,38 +594,8 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;txtPlazo.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
-  <metadata name="txtEnganche.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="txtEnganche.Font" type="System.Drawing.Font, System.Drawing">
-    <value>DM Sans, 9.749999pt, style=Bold</value>
-  </data>
-  <data name="txtEnganche.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 98</value>
-  </data>
-  <data name="txtEnganche.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
-  </data>
-  <data name="txtEnganche.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;txtEnganche.Name" xml:space="preserve">
-    <value>txtEnganche</value>
-  </data>
-  <data name="&gt;&gt;txtEnganche.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtEnganche.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;txtEnganche.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <metadata name="txtMensualidad.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="txtMensualidad.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
@@ -699,7 +618,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;txtMensualidad.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <metadata name="txtAmortizaciones.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -732,9 +651,6 @@
   <data name="&gt;&gt;txtAmortizaciones.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="groupBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
@@ -762,9 +678,6 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="btnCalcular.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnCalcular.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
@@ -795,9 +708,6 @@
   <data name="&gt;&gt;btnCalcular.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="btnNuevo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnNuevo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
@@ -828,9 +738,6 @@
   <data name="&gt;&gt;btnNuevo.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="groupBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
@@ -858,9 +765,6 @@
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="label11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -868,7 +772,7 @@
     <value>DM Sans, 9.749999pt</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 154</value>
+    <value>286, 101</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 17</value>
@@ -889,11 +793,125 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rbMensual.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbMensual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>DM Sans, 9.749999pt</value>
+  </data>
+  <data name="rbMensual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 152</value>
+  </data>
+  <data name="rbMensual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="rbMensual.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="rbMensual.Text" xml:space="preserve">
+    <value>Mensual</value>
+  </data>
+  <data name="&gt;&gt;rbMensual.Name" xml:space="preserve">
+    <value>rbMensual</value>
+  </data>
+  <data name="&gt;&gt;rbMensual.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbMensual.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;rbMensual.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbAnual.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbAnual.Font" type="System.Drawing.Font, System.Drawing">
+    <value>DM Sans, 9.749999pt</value>
+  </data>
+  <data name="rbAnual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 152</value>
+  </data>
+  <data name="rbAnual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 21</value>
+  </data>
+  <data name="rbAnual.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="rbAnual.Text" xml:space="preserve">
+    <value>Anual</value>
+  </data>
+  <data name="&gt;&gt;rbAnual.Name" xml:space="preserve">
+    <value>rbAnual</value>
+  </data>
+  <data name="&gt;&gt;rbAnual.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbAnual.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;rbAnual.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="groupBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>DM Sans, 9.749999pt</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 188</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 17</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Total a pagar</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtTotalPrestamo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>DM Sans, 9.749999pt, style=Bold</value>
+  </data>
+  <data name="txtTotalPrestamo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 208</value>
+  </data>
+  <data name="txtTotalPrestamo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="txtTotalPrestamo.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;txtTotalPrestamo.Name" xml:space="preserve">
+    <value>txtTotalPrestamo</value>
+  </data>
+  <data name="&gt;&gt;txtTotalPrestamo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTotalPrestamo.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;txtTotalPrestamo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
