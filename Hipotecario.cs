@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Credito
 {
-    class Personal: Prestamo
+    class Hipotecario : Prestamo
     {
         public override double obtenerTasaAnual()
         {
-            return tasaAnual = 17;
+            return tasaAnual = 9;
         }
     }
 }

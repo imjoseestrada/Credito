@@ -8,34 +8,49 @@ namespace Credito
 {
     abstract class Prestamo
     {
-        protected double monto, pagoMensual, intereses, impuestos, capital, insoluto, totalPrestamo = 0;
+        protected double monto, denominador, pagoMensual, intereses, impuestos, capital, insoluto, totalPrestamo = 0;
         protected int plazo;
-        protected decimal tasaAnual, tasaMensual, IVA;
-        protected Boolean primerPago = true;
+        protected double tasaMensual, tasaMensualConIVA;
+        protected double tasaAnual;
+        protected double IVA = 1.16;
+        protected bool primerPago = true;
 
 
-        private void establecerMonto(double monto)
+        public void establecerMonto(double monto)
         {
             this.monto = monto;
         }
 
-        public void establecerPlazo(int plazo)
+        public void establecerPlazo(bool plazoMensual, int plazo)
         {
-            this.plazo = plazo;
+            if (plazoMensual == true)
+            {
+                this.plazo = plazo;
+            } else
+            {
+                this.plazo = plazo * 12;
+            }
         }
 
-        public decimal calcularTasaMensual()
+        public void establecerTasaAnual(double tasaAnual)
+        {
+            this.tasaAnual = tasaAnual;
+        }
+
+        public double calcularTasaMensual()
         {
             tasaMensual = (tasaAnual / 100) / 12;
             return tasaMensual;
         }
 
-        public void establecerIVA(decimal IVA)
+        public double calcularPagoMensual()
         {
-            this.IVA = IVA;
-        }
+            tasaMensualconIVA();
+            denominador = Math.Pow((1 + tasaMensualConIVA), plazo) - 1;
 
-        public abstract double calcularPagoMensual();
+            pagoMensual = (tasaMensualConIVA + (tasaMensualConIVA / denominador)) * monto;
+            return pagoMensual;
+        }
 
         public double calcularIntereses()
         {
@@ -54,7 +69,7 @@ namespace Credito
 
         public double calcularImpuestos()
         {
-            impuestos = intereses * (double) IVA;
+            impuestos = intereses * IVA;
             return impuestos;
         }
 
@@ -85,6 +100,23 @@ namespace Credito
                 totalPrestamo = totalPrestamo + calcularPagoMensual();
             }
             return totalPrestamo;
+        }
+
+        public double obtenerPagoMensual()
+        {
+            return Math.Round(pagoMensual, 2);
+        }
+
+        public double obtenerTotalPrestamo()
+        {
+            return Math.Round(totalPrestamo, 2);
+        }
+
+        public abstract double obtenerTasaAnual();
+
+        public double tasaMensualconIVA()
+        {
+            return tasaMensualConIVA = tasaMensual * IVA;
         }
     }
 }

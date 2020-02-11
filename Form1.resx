@@ -152,9 +152,9 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="cbTipoCredito.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="cbTipoCredito.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="cbTipoCredito.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
@@ -449,6 +449,9 @@
   <data name="txtNumeroCliente.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 41</value>
   </data>
+  <data name="txtNumeroCliente.MaxLength" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
   <data name="txtNumeroCliente.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 24</value>
   </data>
@@ -503,6 +506,9 @@
   <data name="txtNumeroCuenta.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 41</value>
   </data>
+  <data name="txtNumeroCuenta.MaxLength" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="txtNumeroCuenta.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 24</value>
   </data>
@@ -521,62 +527,74 @@
   <data name="&gt;&gt;txtNumeroCuenta.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="txtCapital.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="txtCapital.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtMonto.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMonto.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
-  <data name="txtCapital.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtMonto.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 98</value>
   </data>
-  <data name="txtCapital.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtMonto.MaxLength" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtMonto.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 24</value>
   </data>
-  <data name="txtCapital.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtMonto.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;txtCapital.Name" xml:space="preserve">
-    <value>txtCapital</value>
+  <data name="&gt;&gt;txtMonto.Name" xml:space="preserve">
+    <value>txtMonto</value>
   </data>
-  <data name="&gt;&gt;txtCapital.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtMonto.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtCapital.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtMonto.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;txtCapital.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtMonto.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="txtInteres.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtTasaAnual.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtTasaAnual.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
-  <data name="txtInteres.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtTasaAnual.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 98</value>
   </data>
-  <data name="txtInteres.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtTasaAnual.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
   </data>
-  <data name="txtInteres.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtTasaAnual.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;txtInteres.Name" xml:space="preserve">
-    <value>txtInteres</value>
+  <data name="&gt;&gt;txtTasaAnual.Name" xml:space="preserve">
+    <value>txtTasaAnual</value>
   </data>
-  <data name="&gt;&gt;txtInteres.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtTasaAnual.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtInteres.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtTasaAnual.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;txtInteres.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtTasaAnual.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="txtPlazo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="txtPlazo.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
   <data name="txtPlazo.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 151</value>
+  </data>
+  <data name="txtPlazo.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="txtPlazo.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 24</value>
@@ -595,6 +613,9 @@
   </data>
   <data name="&gt;&gt;txtPlazo.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="txtMensualidad.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="txtMensualidad.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
@@ -620,9 +641,9 @@
   <data name="&gt;&gt;txtMensualidad.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="txtAmortizaciones.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="txtAmortizaciones.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtAmortizaciones.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 23</value>
   </data>
@@ -634,7 +655,7 @@
     <value>Vertical</value>
   </data>
   <data name="txtAmortizaciones.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 298</value>
+    <value>258, 298</value>
   </data>
   <data name="txtAmortizaciones.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -655,10 +676,10 @@
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 77</value>
+    <value>357, 77</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 327</value>
+    <value>270, 327</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -676,7 +697,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="btnCalcular.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="btnCalcular.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -685,10 +709,10 @@
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
   <data name="btnCalcular.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 21</value>
+    <value>449, 21</value>
   </data>
   <data name="btnCalcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 39</value>
+    <value>86, 39</value>
   </data>
   <data name="btnCalcular.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -706,7 +730,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnCalcular.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
+  </data>
+  <data name="btnNuevo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="btnNuevo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -715,10 +742,10 @@
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
   <data name="btnNuevo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 21</value>
+    <value>541, 21</value>
   </data>
   <data name="btnNuevo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 39</value>
+    <value>86, 39</value>
   </data>
   <data name="btnNuevo.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -736,13 +763,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNuevo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 12</value>
+    <value>24, 12</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>312, 138</value>
@@ -763,7 +790,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -798,6 +825,9 @@
   <data name="rbMensual.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="rbMensual.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="rbMensual.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt</value>
   </data>
@@ -827,6 +857,9 @@
   </data>
   <data name="rbAnual.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="rbAnual.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="rbAnual.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt</value>
@@ -888,6 +921,9 @@
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="txtTotalPrestamo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtTotalPrestamo.Font" type="System.Drawing.Font, System.Drawing">
     <value>DM Sans, 9.749999pt, style=Bold</value>
   </data>
@@ -916,7 +952,7 @@
     <value>DM Sans, 12pt, style=Bold</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 156</value>
+    <value>24, 156</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>312, 248</value>
@@ -937,12 +973,42 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="btnValidar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="btnValidar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>DM Sans, 12pt, style=Bold</value>
+  </data>
+  <data name="btnValidar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnValidar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 21</value>
+  </data>
+  <data name="btnValidar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 39</value>
+  </data>
+  <data name="btnValidar.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btnValidar.Text" xml:space="preserve">
+    <value>Validar</value>
+  </data>
+  <data name="&gt;&gt;btnValidar.Name" xml:space="preserve">
+    <value>btnValidar</value>
+  </data>
+  <data name="&gt;&gt;btnValidar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnValidar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnValidar.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">

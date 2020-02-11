@@ -42,8 +42,8 @@
             this.txtNumeroCliente = new System.Windows.Forms.TextBox();
             this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.txtNumeroCuenta = new System.Windows.Forms.TextBox();
-            this.txtCapital = new System.Windows.Forms.TextBox();
-            this.txtInteres = new System.Windows.Forms.TextBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.txtTasaAnual = new System.Windows.Forms.TextBox();
             this.txtPlazo = new System.Windows.Forms.TextBox();
             this.txtMensualidad = new System.Windows.Forms.TextBox();
             this.txtAmortizaciones = new System.Windows.Forms.TextBox();
@@ -53,10 +53,11 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbMensual = new System.Windows.Forms.RadioButton();
+            this.rbAnual = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.txtTotalPrestamo = new System.Windows.Forms.TextBox();
-            this.rbAnual = new System.Windows.Forms.RadioButton();
-            this.rbMensual = new System.Windows.Forms.RadioButton();
+            this.btnValidar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -78,6 +79,7 @@
             resources.GetString("cbTipoCredito.Items1"),
             resources.GetString("cbTipoCredito.Items2")});
             this.cbTipoCredito.Name = "cbTipoCredito";
+            this.cbTipoCredito.SelectedValueChanged += new System.EventHandler(this.cbTipoCredito_SelectedValueChanged);
             // 
             // label2
             // 
@@ -144,21 +146,20 @@
             this.txtNumeroCuenta.Name = "txtNumeroCuenta";
             this.txtNumeroCuenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
-            // txtCapital
+            // txtMonto
             // 
-            this.txtCapital.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.txtCapital, "txtCapital");
-            this.txtCapital.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCapital.Name = "txtCapital";
-            this.txtCapital.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
+            this.txtMonto.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.txtMonto, "txtMonto");
+            this.txtMonto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloNumeros);
             // 
-            // txtInteres
+            // txtTasaAnual
             // 
-            this.txtInteres.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.txtInteres, "txtInteres");
-            this.txtInteres.ForeColor = System.Drawing.Color.DimGray;
-            this.txtInteres.Name = "txtInteres";
-            this.txtInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumerosDecimales);
+            this.txtTasaAnual.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.txtTasaAnual, "txtTasaAnual");
+            this.txtTasaAnual.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTasaAnual.Name = "txtTasaAnual";
             // 
             // txtPlazo
             // 
@@ -177,8 +178,8 @@
             // 
             // txtAmortizaciones
             // 
-            this.txtAmortizaciones.ForeColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.txtAmortizaciones, "txtAmortizaciones");
+            this.txtAmortizaciones.ForeColor = System.Drawing.Color.DimGray;
             this.txtAmortizaciones.Name = "txtAmortizaciones";
             // 
             // groupBox1
@@ -239,12 +240,28 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.txtCapital);
+            this.groupBox3.Controls.Add(this.txtMonto);
             this.groupBox3.Controls.Add(this.txtPlazo);
-            this.groupBox3.Controls.Add(this.txtInteres);
+            this.groupBox3.Controls.Add(this.txtTasaAnual);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // rbMensual
+            // 
+            resources.ApplyResources(this.rbMensual, "rbMensual");
+            this.rbMensual.Name = "rbMensual";
+            this.rbMensual.TabStop = true;
+            this.rbMensual.UseVisualStyleBackColor = true;
+            this.rbMensual.CheckedChanged += new System.EventHandler(this.rbMensual_CheckedChanged);
+            // 
+            // rbAnual
+            // 
+            resources.ApplyResources(this.rbAnual, "rbAnual");
+            this.rbAnual.Name = "rbAnual";
+            this.rbAnual.TabStop = true;
+            this.rbAnual.UseVisualStyleBackColor = true;
+            this.rbAnual.CheckedChanged += new System.EventHandler(this.rbAnual_CheckedChanged);
             // 
             // label12
             // 
@@ -258,29 +275,24 @@
             this.txtTotalPrestamo.ForeColor = System.Drawing.Color.DimGray;
             this.txtTotalPrestamo.Name = "txtTotalPrestamo";
             // 
-            // rbAnual
+            // btnValidar
             // 
-            resources.ApplyResources(this.rbAnual, "rbAnual");
-            this.rbAnual.Name = "rbAnual";
-            this.rbAnual.TabStop = true;
-            this.rbAnual.UseVisualStyleBackColor = true;
-            // 
-            // rbMensual
-            // 
-            resources.ApplyResources(this.rbMensual, "rbMensual");
-            this.rbMensual.Name = "rbMensual";
-            this.rbMensual.TabStop = true;
-            this.rbMensual.UseVisualStyleBackColor = true;
+            this.btnValidar.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnValidar, "btnValidar");
+            this.btnValidar.Name = "btnValidar";
+            this.btnValidar.UseVisualStyleBackColor = true;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.btnValidar);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -309,8 +321,8 @@
         private System.Windows.Forms.TextBox txtNumeroCuenta;
         private System.Windows.Forms.TextBox txtNombreCliente;
         private System.Windows.Forms.ComboBox cbTipoCredito;
-        private System.Windows.Forms.TextBox txtCapital;
-        private System.Windows.Forms.TextBox txtInteres;
+        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.TextBox txtTasaAnual;
         private System.Windows.Forms.TextBox txtPlazo;
         private System.Windows.Forms.TextBox txtMensualidad;
         private System.Windows.Forms.TextBox txtAmortizaciones;
@@ -324,6 +336,7 @@
         private System.Windows.Forms.RadioButton rbAnual;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtTotalPrestamo;
+        private System.Windows.Forms.Button btnValidar;
     }
 }
 
