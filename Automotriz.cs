@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Credito
 {
-    class Automotriz : Prestamo
+    class Automotriz: Prestamo
     {
         public override double obtenerTasaAnual()
         {

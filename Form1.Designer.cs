@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.cbTipoCredito = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,25 +38,26 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.txtNumeroCliente = new System.Windows.Forms.TextBox();
-            this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.txtNumeroCuenta = new System.Windows.Forms.TextBox();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.cbTipoCredito = new System.Windows.Forms.ComboBox();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.txtTasaAnual = new System.Windows.Forms.TextBox();
+            this.rbMensual = new System.Windows.Forms.RadioButton();
+            this.rbAnual = new System.Windows.Forms.RadioButton();
             this.txtPlazo = new System.Windows.Forms.TextBox();
+            this.txtTotalPrestamo = new System.Windows.Forms.TextBox();
             this.txtMensualidad = new System.Windows.Forms.TextBox();
             this.txtAmortizaciones = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnValidar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rbMensual = new System.Windows.Forms.RadioButton();
-            this.rbAnual = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtTotalPrestamo = new System.Windows.Forms.TextBox();
-            this.btnValidar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -253,7 +253,7 @@
             this.rbMensual.Name = "rbMensual";
             this.rbMensual.TabStop = true;
             this.rbMensual.UseVisualStyleBackColor = true;
-            this.rbMensual.CheckedChanged += new System.EventHandler(this.rbMensual_CheckedChanged);
+            this.rbMensual.CheckedChanged += new System.EventHandler(this.rbPlazo_CheckedChanged);
             // 
             // rbAnual
             // 
@@ -261,7 +261,7 @@
             this.rbAnual.Name = "rbAnual";
             this.rbAnual.TabStop = true;
             this.rbAnual.UseVisualStyleBackColor = true;
-            this.rbAnual.CheckedChanged += new System.EventHandler(this.rbAnual_CheckedChanged);
+            this.rbAnual.CheckedChanged += new System.EventHandler(this.rbPlazo_CheckedChanged);
             // 
             // label12
             // 
@@ -317,26 +317,26 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtNumeroCliente;
         private System.Windows.Forms.TextBox txtNumeroCuenta;
         private System.Windows.Forms.TextBox txtNombreCliente;
         private System.Windows.Forms.ComboBox cbTipoCredito;
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.TextBox txtTasaAnual;
+        private System.Windows.Forms.RadioButton rbAnual;
+        private System.Windows.Forms.RadioButton rbMensual;
         private System.Windows.Forms.TextBox txtPlazo;
+        private System.Windows.Forms.TextBox txtTotalPrestamo;
         private System.Windows.Forms.TextBox txtMensualidad;
         private System.Windows.Forms.TextBox txtAmortizaciones;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnValidar;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton rbMensual;
-        private System.Windows.Forms.RadioButton rbAnual;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtTotalPrestamo;
-        private System.Windows.Forms.Button btnValidar;
     }
 }
 
