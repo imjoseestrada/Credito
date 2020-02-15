@@ -8,9 +8,11 @@ namespace Credito
 {
     abstract class Prestamo
     {
-        protected double monto, tasaAnual, tasaMensual, mensualidad, IVA = 0.16, primerInteres = 0, insoluto = 0;
+        protected double monto, tasaAnual, tasaMensual, mensualidad, IVA = 0.16;
+        protected double intereses, impuestos, capital, insoluto;
+        protected double primerInteres = 0, primerImpuesto = 0, primerCapital = 0, primerInsoluto = 0;
         protected int plazo;
-        protected bool primerCalculoIntereses = true, primerSaldoInsoluto = true;
+        protected bool primerSaldoInsoluto = true;
 
         public void establecerMonto(double monto)
         {
@@ -76,50 +78,25 @@ namespace Credito
 
         public double Intereses()
         {
-            double intereses = 0;
-            if (primerCalculoIntereses == true)
+            if (primerInteres == 0)
             {
                 intereses = tasaMensual * monto;
                 primerInteres = intereses;
-                // Aisla el importe del primer cálculo de intereses
-                // para reutilizarlo más tarde al calcular
-                // impuestos y capital
-                primerCalculoIntereses = false;
             }
             else
             {
                 intereses = tasaMensual * insoluto;
-                primerInteres = 0;
             }
 
             return intereses;
         }
 
-        public double SaldoInsoluto()
-        {
-            if (primerSaldoInsoluto == true)
-            {
-                insoluto = monto - Capital();
-                primerSaldoInsoluto = false;
-            }
-            else
-            {
-                insoluto -= Capital();
-            }
-
-            return insoluto;
-        }
-
         public double Impuestos()
         {
-            double impuestos = 0;
-            if(primerInteres != 0)
+            if (primerImpuesto == 0)
             {
                 impuestos = primerInteres * IVA;
-                // Si utilizo el método para calcular intereses
-                // de manera directa, obtendría 0 porque para el
-                // método Intereses() dejaría de ser el primer
-                // calculo e insoluto no tiene valor asignado.
+                primerImpuesto = impuestos;
             }
             else
             {
@@ -131,14 +108,10 @@ namespace Credito
 
         public double Capital()
         {
-            double capital = 0;
-            if (primerInteres != 0)
+            if (primerCapital == 0)
             {
-                capital = mensualidad - primerInteres - Impuestos();
-                // Si utilizo el método para calcular intereses
-                // de manera directa, obtendría 0 porque para el
-                // método Intereses() dejaría de ser el primer
-                // calculo e insoluto no tiene valor asignado.
+                capital = mensualidad - primerInteres - primerImpuesto;
+                primerCapital = capital;
             }
             else
             {
@@ -147,20 +120,50 @@ namespace Credito
             return capital;
         }
 
+        public double SaldoInsoluto()
+        {
+            if (primerInsoluto == 0)
+            {
+                insoluto = monto - primerCapital;
+                primerInsoluto = insoluto;
+            }
+            else
+            {
+                insoluto -= Capital();
+            }
+
+            return insoluto;
+        }
+
         public string obtenerAmortizaciones()
         {
+            double acumIntereses = 0, acumImpuestos = 0, acumCapital = 0;
+
             String amortizaciones = "No. | Mensualidad | Intereses | Impuestos | Capital | Insoluto";
             amortizaciones += Environment.NewLine
                 + "-------------------------------------------------------------";
-            for (int i=0; i<plazo; i++)
+            for (int i = 0; i < plazo; i++)
             {
-                amortizaciones += Environment.NewLine + (i+1)
+                double interes = Intereses(), impuesto = Impuestos(), capital = Capital();
+
+                amortizaciones += Environment.NewLine + (i + 1)
                     + "     |    $" + Math.Round(mensualidad, 2)
-                    + "     |    $" + Math.Round(Intereses(), 2)
-                    + "     |    $" + Math.Round(Impuestos(), 2)
-                    + "     |    $" + Math.Round(Capital(), 2)
+                    + "     |    $" + Math.Round(interes, 2)
+                    + "     |    $" + Math.Round(impuesto, 2)
+                    + "     |    $" + Math.Round(capital, 2)
                     + "     |    $" + Math.Round(SaldoInsoluto(), 2);
+
+                acumIntereses += interes;
+                acumImpuestos += impuesto;
+                acumCapital += capital;
             }
+
+            amortizaciones += Environment.NewLine
+                + "-------------------------------------------------------------";
+            amortizaciones += Environment.NewLine + "Intereses: $" + Math.Round(acumIntereses, 2);
+            amortizaciones += Environment.NewLine + "Impuestos: $" + Math.Round(acumImpuestos, 2);
+            amortizaciones += Environment.NewLine + "Capital: $" + Math.Round(acumCapital, 2);
+
             return amortizaciones;
         }
     }
