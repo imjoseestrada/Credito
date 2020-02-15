@@ -12,7 +12,6 @@ namespace Credito
         protected double intereses, impuestos, capital, insoluto;
         protected double primerInteres = 0, primerImpuesto = 0, primerCapital = 0, primerInsoluto = 0;
         protected int plazo;
-        protected bool primerSaldoInsoluto = true;
 
         public void establecerMonto(double monto)
         {
