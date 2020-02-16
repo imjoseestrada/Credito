@@ -143,17 +143,17 @@ namespace Credito
                 + "-------------------------------------------------------------";
             for (int i = 0; i < plazo; i++)
             {
-                double interes = Intereses(), impuesto = Impuestos(), capital = Capital();
+                intereses = Intereses(); impuestos = Impuestos(); capital = Capital();
 
                 amortizaciones += Environment.NewLine + (i + 1)
                     + "     |    $" + Math.Round(mensualidad, 2)
-                    + "     |    $" + Math.Round(interes, 2)
-                    + "     |    $" + Math.Round(impuesto, 2)
+                    + "     |    $" + Math.Round(intereses, 2)
+                    + "     |    $" + Math.Round(impuestos, 2)
                     + "     |    $" + Math.Round(capital, 2)
                     + "     |    $" + Math.Round(SaldoInsoluto(), 2);
 
-                acumIntereses += interes;
-                acumImpuestos += impuesto;
+                acumIntereses += intereses;
+                acumImpuestos += impuestos;
                 acumCapital += capital;
             }
 
